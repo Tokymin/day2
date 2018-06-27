@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 200px;
+            border: 1px solid #000;
+            /*超出父亲盒子就裁剪*/
+            overflow:hidden;
+            position: relative;
+        }
+        .box .inner{
+            background: lightblue;
+            width: 200px;
+            height: 50px;
+            /*定位让盒子在底部*/
+            position: absolute;
+            /*先隐藏*/
+            bottom: -50px;
+            transition: all 1s ease;
+
+        }
+        /*注意空格*/
+        .box:hover .inner{
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="inner">
+        <div>     打五折 998元</div>
+
+    </div>
+</div>
+</body>
+</html>

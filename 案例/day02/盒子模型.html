@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            /*
+            margin+border+padding
+            */
+            height:200px;
+            width:250px;
+            border:10px solid #000;
+            /* 并排 */
+            display:inline-block;
+
+            /* 原来的 盒子计算方式
+               自身的高度+border+padding
+             */
+
+
+            /* content-box   自身的高度+border+padding   */
+            /*box-sizing:content-box;*/
+
+            /* 采用的就是自身的宽与高 不包含 border+padding   */
+            box-sizing:border-box;
+
+
+
+
+
+
+        }
+
+        div:hover{
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            border:1px solid #000;
+        }
+        div:nth-child(1){
+
+            /* 相对定位 根据自身 */
+            position:relative;
+            left: 100px;
+            top:100px;
+        }
+
+        div:nth-child(2){
+            /* 找带有定位元素的父亲()*/
+            position:absolute;
+            left: 100px;
+            top:100px;
+
+
+        }
+        /*
+         relative:相对定位 相对于自己,不会脱离文档流
+         relative:0px,说明让自己的移动 0个像素,没有动
+         absolute:绝地定义 它会脱离文档流,后面的哥们就跟着移动了
+                  它是找带有定位(position)的父元素为参照,
+                  如果所有的都父元素,都没有定位属性,那么参数 body
+
+         fixed:以文档为参照,京东,淘宝 固定在顶部的那些效果
+
+         static:默认就是他
+
+
+
+
+
+
+        */
+    </style>
+</head>
+<body>
+<div>relative</div>
+<div>absolute</div>
+</body>
+</html>

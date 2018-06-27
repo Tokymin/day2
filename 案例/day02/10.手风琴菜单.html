@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style:none;
+            width:500px;
+            border:1px solid #000;
+            margin:0;
+            padding:0;
+        }
+        sapn{
+            background:greenyellow;
+            /*display:block;*/
+            display:block;
+        }
+        li div{
+            /*height:300px;*/
+            /* 拥有这个 height属性 */
+            height:0px;
+            background:pink;
+            transition:all 0.3s;
+        }
+        li{
+            margin:3px;
+        }
+        /* 鼠标移向 li,让li标签里面的div展开 */
+        li:hover div{
+            /* 需要让height动画,那至少自己 拥有这个height属性 */
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>
+        <sapn>今日新闻</sapn>
+        <div></div>
+    </li>
+
+    <li>
+        <sapn>今日新闻</sapn>
+        <div></div>
+    </li>
+
+    <li>
+        <sapn>今日新闻</sapn>
+        <div></div>
+    </li>
+
+    <li>
+        <sapn>今日新闻</sapn>
+        <div></div>
+    </li>
+
+    <li>
+        <sapn>今日新闻</sapn>
+        <div></div>
+    </li>
+</ul>
+</body>
+</html>

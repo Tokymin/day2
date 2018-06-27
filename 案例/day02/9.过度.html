@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+          .box{
+              width:100px;
+              height:100px;
+              background:green;
+              position:absolute;
+              /* 参加过滤的属性 left */
+              /*transition-property:height;*/
+              /* 参数过去需要花的时间 1s 1秒*/
+              /*transition-duration:1s;*/
+              /*transition-delay:10s;*/
+
+              transition:height 1s cubic-bezier(0.29, 1.08, 0.65, 0.21);
+
+          }
+        .box:hover{
+
+           height:400px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+</div>
+
+
+</body>
+</html>
